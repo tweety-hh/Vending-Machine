@@ -15,7 +15,7 @@
     <!-- 메인 -->
     <div class="container">
       <ul class="coke-list">
-        <li class="coke-item">
+        <li class="coke-item select">
           <img src="./img/콜라.png" alt="orginal cola">
           <p class="coke">Original_Cola</p>
           <p class="coke-price">1000원</p>
@@ -35,7 +35,7 @@
           <p class="coke">Cool_Cola</p>
           <p class="coke-price">1000원</p>
         </li>
-        <li class="coke-item">
+        <li class="coke-item select">
           <img src="./img/초록콜라.png" alt="green cola">
           <p class="coke">Green_Cola</p>
           <p class="coke-price">1000원</p>
@@ -47,13 +47,13 @@
         </li>
       </ul>
       <div class="price">
-        <div class="1000-price">
+        <div class="balance">
           <p>잔액:</p>
           <p>1,000원</p>
         </div>
         <button>거스름돈 반환</button>
         <form>
-          <input type="text" placeholder="입금액 입력">
+          <input type="text" placeholder="입금액 입력" class="">
           <button>입금</button>
         </form>
       </div>
@@ -80,17 +80,16 @@
             <span>5</span>
           </li>
         </ul>
+        <button>획득</button>
       </div>
     </div>
     <!-- // 메인 -->
-    <!-- 소지금 -->
-    <div class="money">
-      <p>소지금 :</p>
-      <p>25,000원</p>
-    </div>
-    <!-- // 소지금 -->
     <!-- 파이널 -->
     <div class="final">
+      <div class="money">
+        <p>소지금 :</p>
+        <p>25,000원</p>
+      </div>
       <div>획득한 음료</div>
       <ul class="main-scroll">
         <li class="main-list">

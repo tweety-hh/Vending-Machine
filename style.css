@@ -3,8 +3,13 @@
   padding: 0;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
 body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-style: normal;
   background-color: #eae8fe;
+  height: 1080px;
 }
 
 ul,
@@ -17,4 +22,140 @@ li {
   width: 386px;
   height: 200px;
   margin: 0 auto;
+  margin-bottom: 67px;
 }
+
+.wrap {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  height: 565px;
+}
+
+.coke-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 31px;
+  padding-left: 27px;
+  gap: 10px;
+}
+
+.coke-list .coke-item {
+  width: 94px;
+  height: 130px;
+  text-align: center;
+  padding-top: 11px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 1px rgba(1, 1, 1, 0.25);
+}
+
+.coke-list .coke-item:first-child,
+.coke-item:nth-child(5) {
+  box-shadow: none;
+}
+
+.coke-list .coke-item:last-child {
+  margin-bottom: 20px;
+}
+
+.coke-item > .coke {
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 13px;
+}
+
+.coke-item > .coke-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #6327fe;
+  width: 70px;
+  height: 22px;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 7px;
+  margin-left: 13px;
+}
+
+.coke-list .coke-item.select {
+  border: 3px solid #6327fe;
+  border-radius: 10px;
+}
+
+.price {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.balance {
+  width: 200px;
+  height: 33px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #eae8fe;
+  padding: 6px 10px 6px 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  align-items: center;
+}
+
+input {
+  width: 200px;
+  height: 33px;
+  margin-top: 11px;
+  margin-right: 12px;
+}
+
+.price button {
+  width: 94px;
+  height: 33px;
+  background-color: #fff;
+  border: none;
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.menu-scroll {
+  /* width: 176px; */
+  display: flex;
+  justify-content: space-around;
+}
+
+.scroll-coke {
+  background-color: #eae8fe;
+  width: 200px;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  margin-top: 11px;
+}
+
+.scroll-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 170px;
+  height: 46px;
+  margin-bottom: 6px;
+  background-color: #fff;
+}
+
+/* .final {
+  display: flex;
+} */
