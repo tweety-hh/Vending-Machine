@@ -27,7 +27,7 @@ li {
 
 .wrap {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .container {
@@ -35,13 +35,14 @@ li {
   display: flex;
   flex-direction: column;
   width: 360px;
-  height: 565px;
+  height: 545px;
+  margin-right: 18px;
 }
 
 .coke-list {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 31px;
+  padding-top: 15px;
   padding-left: 27px;
   gap: 10px;
 }
@@ -78,6 +79,7 @@ li {
   width: 70px;
   height: 22px;
   border-radius: 50px;
+  border: none;
   color: #fff;
   font-size: 12px;
   font-weight: 500;
@@ -115,7 +117,11 @@ input {
   width: 200px;
   height: 33px;
   margin-top: 11px;
-  margin-right: 12px;
+  margin-right: 17px;
+  border-radius: 5px;
+  border: 1px solid #bdbdbd;
+  padding-left: 6px;
+  box-sizing: border-box;
 }
 
 .price button {
@@ -131,31 +137,148 @@ input {
 }
 
 .menu-scroll {
-  /* width: 176px; */
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  margin-left: 10px;
 }
 
 .scroll-coke {
   background-color: #eae8fe;
   width: 200px;
-  height: 110px;
-  display: flex;
-  flex-direction: column;
-  overflow: scroll;
+  height: 106px;
+  overflow-x: hidden;
   margin-top: 11px;
 }
 
 .scroll-list {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 170px;
   height: 46px;
-  margin-bottom: 6px;
+  margin: 12px 10px 6px 12px;
   background-color: #fff;
+  border-radius: 7px;
 }
 
-/* .final {
+.scroll-list img,
+.main-list img {
+  width: 17px;
+  height: 32px;
+  padding-left: 10px;
+}
+
+.cola-name {
+  width: 73px;
+  font-size: 9px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.scroll-list .number,
+.main-list .number {
   display: flex;
-} */
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.menu-scroll button {
+  width: 94px;
+  height: 106px;
+  background: #6327fe;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-left: 12px;
+  margin-right: 10px;
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+.final {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+}
+
+.money {
+  background-color: #fff;
+  width: 360px;
+  height: 50px;
+}
+
+.money-purple {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px auto;
+  width: 306px;
+  height: 32px;
+  background-color: #eae8fe;
+  border-radius: 5px;
+  padding: 3px 5px;
+}
+
+.money-purple p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.vm-drink {
+  background-color: #fff;
+  margin-top: 20px;
+  width: 360px;
+  height: 474px;
+}
+
+.vm-drink .vm-text {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.main-scroll {
+  padding-top: 12px;
+  margin: auto;
+  background-color: #eae8fe;
+  margin-top: 13px;
+  height: 500px;
+}
+
+.list-scroll {
+  margin: auto;
+  width: 306px;
+  height: 364px;
+  overflow-y: scroll;
+}
+
+.main-scroll .main-list {
+  display: flex;
+  align-items: center;
+  width: 276px;
+  height: 46px;
+  margin: 12px 10px 6px 12px;
+  background-color: #fff;
+  border-radius: 7px;
+}
+
+.main-list .number {
+  margin-right: 5px;
+}
+
+.total-price {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 6px;
+  margin-right: 27px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 17px;
+}
