@@ -71,7 +71,7 @@ li {
   display: block;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.8);
-  background-image: url("/img/품절.png");
+  background-image: url("./img/품절.png");
   background-repeat: no-repeat;
   background-position: center;
   top: 0;
