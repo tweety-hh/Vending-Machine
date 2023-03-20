@@ -40,10 +40,9 @@ li {
 .coke-list {
   display: flex;
   flex-wrap: wrap;
-  flex-grow: 1;
-  flex-basis: 0;
   padding-top: 15px;
   padding-left: 27px;
+  margin-right: 27px;
   gap: 10px;
 }
 
