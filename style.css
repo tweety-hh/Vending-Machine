@@ -32,8 +32,6 @@ li {
 
 .container {
   background-color: #fff;
-  display: flex;
-  flex-direction: column;
   width: 360px;
   height: 545px;
   margin-right: 18px;
@@ -42,23 +40,21 @@ li {
 .coke-list {
   display: flex;
   flex-wrap: wrap;
+  flex-grow: 1;
+  flex-basis: 0;
   padding-top: 15px;
   padding-left: 27px;
   gap: 10px;
 }
 
 .coke-list .coke-item {
-  width: 94px;
+  width: 30%;
   height: 130px;
   text-align: center;
   padding-top: 11px;
   border-radius: 10px;
   box-shadow: 1px 1px 1px 1px rgba(1, 1, 1, 0.25);
-}
-
-.coke-list .coke-item:first-child,
-.coke-item:nth-child(5) {
-  box-shadow: none;
+  position: relative;
 }
 
 .coke-list .coke-item:last-child {
@@ -69,6 +65,22 @@ li {
   font-weight: 500;
   font-size: 9px;
   line-height: 13px;
+}
+
+.coke-item.sold-out::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-image: url("/img/품절.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  border-radius: 10px;
 }
 
 .coke-item > .coke-price {
@@ -89,6 +101,7 @@ li {
 
 .coke-list .coke-item.select {
   border: 3px solid #6327fe;
+  box-shadow: none;
   border-radius: 10px;
 }
 
@@ -142,11 +155,12 @@ input {
   margin-left: 10px;
 }
 
-.scroll-coke {
+.menu-scroll .scroll-coke {
   background-color: #eae8fe;
   width: 200px;
   height: 106px;
-  overflow-x: hidden;
+  overflow-y: scroll;
+  text-align: center;
   margin-top: 11px;
 }
 
@@ -242,13 +256,13 @@ input {
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
+  margin-bottom: 13px;
 }
 
 .main-scroll {
   padding-top: 12px;
   margin: auto;
   background-color: #eae8fe;
-  margin-top: 13px;
   height: 500px;
 }
 
@@ -281,4 +295,23 @@ input {
   font-weight: 500;
   font-size: 12px;
   line-height: 17px;
+}
+
+.small-scroll .scroll-coke::-webkit-scrollbar,
+.big-scroll .list-scroll::-webkit-scrollbar {
+  width: 10px;
+}
+
+.small-scroll .scroll-coke::-webkit-scrollbar-thumb,
+.big-scroll .list-scroll::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  background-clip: padding-box;
+  border-radius: 0.5rem;
+  border: 3px solid transparent;
+}
+
+.big-scroll .list-scroll::-webkit-scrollbar-track {
+  background-color: #eae8fe;
+  height: 364px;
+  padding: 30px;
 }
